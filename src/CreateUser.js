@@ -36,7 +36,7 @@ export default function UserCreate() {
       'email': email,
       'avatar': avatar
     }
-    fetch('https://rainbow-dancing-keyboard.glitch.me/api/users/', {
+    fetch('https://agile-hamlet-32644.herokuapp.com/api/users/', {
       method: 'POST',
       headers: {
         Accept: 'application/form-data',

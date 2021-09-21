@@ -44,7 +44,7 @@ export default function UserList() {
   }, [])
   
   const UsersGet = () => {
-    fetch('https://rainbow-dancing-keyboard.glitch.me/api/users')
+    fetch('https://agile-hamlet-32644.herokuapp.com/api/users')
       .then(res => res.json())
       .then(
         (result) => {
@@ -61,7 +61,7 @@ export default function UserList() {
     var data = {
       'id': id
     }
-    fetch('https://rainbow-dancing-keyboard.glitch.me/api/users/' + data.id, {
+    fetch('https://agile-hamlet-32644.herokuapp.com/api/users/' + data.id, {
       method: 'DELETE',
       headers: {
         Accept: 'application/form-data',

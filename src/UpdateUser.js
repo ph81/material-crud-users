@@ -33,7 +33,7 @@ export default function UserUpdate() {
   const { id } = useParams();
   
   useEffect(() => {
-    fetch('https://rainbow-dancing-keyboard.glitch.me/api/users/' + id)
+    fetch('https://agile-hamlet-32644.herokuapp.com/api/users/' + id)
       .then(res => res.json())
       .then(
         (result) => {
@@ -56,7 +56,7 @@ export default function UserUpdate() {
       'email': email,
       'avatar': avatar
     }
-    fetch('https://rainbow-dancing-keyboard.glitch.me/api/users/' + data.id, {
+    fetch('https://agile-hamlet-32644.herokuapp.com/api/users/' + data.id, {
       method: 'PUT',
       headers: {
         Accept: 'application/form-data',
